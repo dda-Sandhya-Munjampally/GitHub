@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="7bf82b22-9181-4182-9069-23d9baa4f906" activeEnvironment="Default environment" name="PHL" lastOpened="2016-07-19T11:53:58.284-04:00" resourceRoot="" soapui-version="6.0.0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="Trade"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value="JUnit-Style HTML Report"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Run in-process" value="false"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value=""/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="Phl_Trade"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default environment"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="C:\Users\Vijaya.Gorrela\Desktop\Report"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="5e0edd5f-7d85-496a-a881-2f2f4177feb8" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://dev.dfds.construction.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://dev.dfds.construction.com</con:endpoint></con:endpoints><con:resource name="Phl" path="/planHolderListProcess" id="842ff544-cb5e-4152-8814-e56a3a38a787"><con:settings/><con:parameters><con:parameter><con:name>trade</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Phl" id="cb2891a2-7257-4deb-8ff2-eca3bc45e00d" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>403</con:status><con:params/><con:element xmlns:phl="https://dev.dfds.construction.com/phl">phl:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:phl="https://dev.dfds.construction.com/phl">phl:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:phl="https://dev.dfds.construction.com/phl">phl:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Trade" id="13bca2a2-5ffd-4c93-9b84-de1f546dbf24" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-api-key" value="EVNNF37PHR3MhRhI2JyLd28M2vRwUprD1CHKOgzx" xmlns="http://eviware.com/soapui/config"/></con:setting><con:setting id="RecordRequestRepresentations">true</con:setting></con:settings><con:endpoint>http://10.164.21.36/dfds_phl</con:endpoint><con:request><![CDATA[[
+  {
+    "efeed_record_id":"MHC_13_08_6_931.01.10191",
+    "project_title":"Drydock Repair",
+    "contract_number":"",
+    "bid_date":"05-April-2016",
+    "page_url":"https:\/\/www.fbo.gov\/?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=core&_cview=0",
+    "bidders_url":"https:\/\/www.fbo.gov\/index?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=ivl&tabmode=list&subtab=list&subtabmode=list&=",
+    "bidder_records":[
+      {
+        "record_id":"",
+        "name":"Technical Concept Solutions",
+        "address1":"143 S Village DR",
+        "address2":"",
+        "address3":"",
+        "city":"Avenel",
+        "state":"NJ",
+        "zip":"07001",
+        "phone":"2017594085",
+        "fax":"",
+        "email":"Jpeter@tech-c-a-s.com",
+        "company":"Technical Concept Solutions",
+        "trade":"Plumbing",
+        "valuation":"",
+        "awardee":"NO",
+        "contacts":[
+          {
+            "full_name":"Joe Peter",
+            "first_name":"Joe",
+            "middle_initial":"",
+            "last_name":"Peter",
+            "title":"",
+            "email":""
+          }
+        ]
+      }
+    ]
+  }
+]]]></con:request><con:originalUri>https://dev.dfds.construction.com/phl</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="trade" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>trade</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="d92055e6-6d8f-4ebe-b45a-2ae2f9a705ea" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://dev.dfds.construction.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://dev.dfds.construction.com</con:endpoint></con:endpoints><con:resource name="Phl" path="/planHolderListProcess" id="f5550c40-9a04-44e1-859f-ebe9974f2c18"><con:settings/><con:parameters/><con:method name="Phl" id="583353db-580f-4933-a238-bbea50b8f73f" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:phl="https://dev.dfds.construction.com/phl">phl:Response</con:element></con:representation><con:request name="PHL-Awardee" id="03bfd7f5-c2aa-4eb4-865e-236400bd2f27" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-api-key" value="EVNNF37PHR3MhRhI2JyLd28M2vRwUprD1CHKOgzx" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://10.164.21.36/dfds_phl</con:endpoint><con:request><![CDATA[[
+  {
+    "efeed_record_id":"MHC_13_08_6_931.01.10191",
+    "project_title":"Drydock Repair",
+    "contract_number":"",
+    "bid_date":"05-April-2016",
+    "page_url":"https:\/\/www.fbo.gov\/?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=core&_cview=0",
+    "bidders_url":"https:\/\/www.fbo.gov\/index?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=ivl&tabmode=list&subtab=list&subtabmode=list&=",
+    "bidder_records":[
+      {
+        "record_id":"",
+        "name":"Technical Concept Solutions",
+        "address1":"143 S Village DR",
+        "address2":"",
+        "address3":"",
+        "city":"Avenel",
+        "state":"NJ",
+        "zip":"07001",
+        "phone":"2017594085",
+        "fax":"",
+        "email":"Jpeter@tech-c-a-s.com",
+        "company":"Technical Concept Solutions",
+        "trade":"Plumbing",
+        "valuation":"",
+        "contacts":[
+          {
+            "full_name":"Joe Peter",
+            "first_name":"Joe",
+            "middle_initial":"",
+            "last_name":"Peter",
+            "title":"",
+            "email":""
+          }
+        ]
+      }
+    ]
+  }
+]]]></con:request><con:originalUri>https://dev.dfds.construction.com/phl</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="72fd17b2-3516-4e7d-9a5b-49d599b12ef8" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://10.164.21.36" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.164.21.36</con:endpoint></con:endpoints><con:resource name="PlanHolderListProcess" path="/dfds_phl/planHolderListProcess" id="fc017599-cb0d-4f0b-a3ee-7b748fcbe38c"><con:settings/><con:parameters/><con:method name="PlanHolderListProcess" id="8d4bdfbf-d907-4c4a-ac55-e95176502950" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:plan="http://10.164.21.36/dfds_phl/planHolderListProcess">plan:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="PHL-Phonenonull" id="1bcd799d-6332-4635-b2e4-cf6e2422cff9" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-api-key" value="" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://10.164.21.36</con:endpoint><con:request><![CDATA[[
+  {
+    "efeed_record_id":"MHC_13_08_6_931.01.10191",
+    "project_title":"Drydock Repair",
+    "contract_number":"",
+    "bid_date":"05-April-2016",
+    "page_url":"https:\/\/www.fbo.gov\/?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=core&_cview=0",
+    "bidders_url":"https:\/\/www.fbo.gov\/index?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=ivl&tabmode=list&subtab=list&subtabmode=list&=",
+    "bidder_records":[
+      {
+        "record_id":"",
+        "name":"Technical Concept Solutions",
+        "address1":"143 S Village DR",
+        "address2":"",
+        "address3":"",
+        "city":"Avenel",
+        "state":"NJ",
+        "zip":"07001",
+        "phone":"",
+        "fax":"",
+        "email":"Jpeter@tech-c-a-s.com",
+        "company":"Technical Concept Solutions",
+        "trade":"Plumbing",
+        "valuation":"",
+        "contacts":[
+          {
+            "full_name":"Joe Peter",
+            "first_name":"Joe",
+            "middle_initial":"",
+            "last_name":"Peter",
+            "title":"",
+            "email":""
+          }
+        ]
+      }
+    ]
+  }
+]]]></con:request><con:originalUri>http://10.164.21.36/dfds_phl/planHolderListProcess</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="6b5938cd-501c-4086-8e31-7a17d7caa21c" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://10.164.21.36" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.164.21.36</con:endpoint></con:endpoints><con:resource name="PlanHolderListProcess" path="/dfds_phl/planHolderListProcess" id="468421bf-146e-4a6c-b977-d56e0a6fd9e1"><con:settings/><con:parameters/><con:method name="PlanHolderListProcess" id="afb716f5-45f9-41df-94d7-204d35d3fb74" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:plan="http://10.164.21.36/dfds_phl/planHolderListProcess">plan:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="PHL-Phonenoexceeds10" id="684bd216-7cce-4971-8f2c-7dd21981dd63" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-api-key" value="EVNNF37PHR3MhRhI2JyLd28M2vRwUprD1CHKOgzx" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://10.164.21.36</con:endpoint><con:request><![CDATA[[
+  {
+    "efeed_record_id":"MHC_13_08_6_931.01.10191",
+    "project_title":"Drydock Repair",
+    "contract_number":"",
+    "bid_date":"05-April-2016",
+    "page_url":"https:\/\/www.fbo.gov\/?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=core&_cview=0",
+    "bidders_url":"https:\/\/www.fbo.gov\/index?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=ivl&tabmode=list&subtab=list&subtabmode=list&=",
+    "bidder_records":[
+      {
+        "record_id":"",
+        "name":"Technical Concept Solutions",
+        "address1":"143 S Village DR",
+        "address2":"",
+        "address3":"",
+        "city":"Avenel",
+        "state":"NJ",
+        "zip":"07001",
+        "phone":"22934423223948230",
+        "fax":"",
+        "email":"Jpeter@tech-c-a-s.com",
+        "company":"Technical Concept Solutions",
+        "trade":"Plumbing",
+        "valuation":"",
+        "contacts":[
+          {
+            "full_name":"Joe Peter",
+            "first_name":"Joe",
+            "middle_initial":"",
+            "last_name":"Peter",
+            "title":"",
+            "email":""
+          }
+        ]
+      }
+    ]
+  }
+]]]></con:request><con:originalUri>http://10.164.21.36/dfds_phl/planHolderListProcess</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="3005818a-ddab-4b53-9044-97e3ffdd46e1" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://10.164.21.36" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.164.21.36</con:endpoint></con:endpoints><con:resource name="PlanHolderListProcess" path="/dfds_phl/planHolderListProcess" id="4a26439e-bb28-4995-9238-27cbfe324cba"><con:settings/><con:parameters/><con:method name="PlanHolderListProcess" id="e0a907c0-49c2-442d-99e5-afb3514a2710" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:plan="http://10.164.21.36/dfds_phl/planHolderListProcess">plan:Response</con:element></con:representation><con:request name="Addess1null-Address2notnull" id="02842666-eca3-46cd-9e74-5a07bea0886f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-api-key" value="EVNNF37PHR3MhRhI2JyLd28M2vRwUprD1CHKOgzx" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://10.164.21.36</con:endpoint><con:request><![CDATA[[
+  {
+    "efeed_record_id":"MHC_13_08_6_931.01.10191",
+    "project_title":"Drydock Repair",
+    "contract_number":"",
+    "bid_date":"14-jun-2016",
+    "page_url":"https:\/\/www.fbo.gov\/?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=core&_cview=0",
+    "bidders_url":"https:\/\/www.fbo.gov\/index?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=ivl&tabmode=list&subtab=list&subtabmode=list&=",
+    "bidder_records":[
+      {
+        "record_id":"",
+        "name":"Technical Concept Solutions",
+        "address1":"",
+        "address2":"143 S Village Dr",
+        "address3":"",
+        "city":"Avenel",
+        "state":"NJ",
+        "zip":"07001",
+        "phone":"2293442",
+        "fax":"",
+        "email":"Jpeter@tech-c-a-s.com",
+        "company":"Technical Concept Solutions",
+        "trade":"Plumbing",
+        "valuation":"",
+        "contacts":[
+          {
+            "full_name":"Joe Peter",
+            "first_name":"Joe",
+            "middle_initial":"",
+            "last_name":"Peter",
+            "title":"",
+            "email":""
+          }
+        ]
+      }
+    ]
+  }
+]]]></con:request><con:originalUri>http://10.164.21.36/dfds_phl/planHolderListProcess</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="e4b42b1e-0cdc-407d-b00d-99dd063363d4" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://10.164.21.36" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.164.21.36</con:endpoint></con:endpoints><con:resource name="PlanHolderListProcess" path="/dfds_phl/planHolderListProcess" id="a8028ac9-9213-46b6-b127-88904648f615"><con:settings/><con:parameters/><con:method name="PlanHolderListProcess" id="e04f556e-8b6d-45bc-bd31-c5ce8f756274" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:plan="http://10.164.21.36/dfds_phl/planHolderListProcess">plan:Response</con:element></con:representation><con:request name="Address3notnull" id="46332ee8-ad5a-4392-85a5-c54c849fc85e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-api-key" value="EVNNF37PHR3MhRhI2JyLd28M2vRwUprD1CHKOgzx" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://10.164.21.36</con:endpoint><con:request><![CDATA[[
+  {
+    "efeed_record_id":"MHC_13_08_6_931.01.10191",
+    "project_title":"Drydock Repair",
+    "contract_number":"",
+    "bid_date":"14-jun-2016",
+    "page_url":"https:\/\/www.fbo.gov\/?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=core&_cview=0",
+    "bidders_url":"https:\/\/www.fbo.gov\/index?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=ivl&tabmode=list&subtab=list&subtabmode=list&=",
+    "bidder_records":[
+      {
+        "record_id":"",
+        "name":"Technical Concept Solutions",
+        "address1":"",
+        "address2":"143 S Village Dr",
+        "address3":"143 S Village Dr",
+        "city":"Avenel",
+        "state":"NJ",
+        "zip":"07001",
+        "phone":"2293442",
+        "fax":"",
+        "email":"Jpeter@tech-c-a-s.com",
+        "company":"Technical Concept Solutions",
+        "trade":"Plumbing",
+        "valuation":"",
+        "contacts":[
+          {
+            "full_name":"Joe Peter",
+            "first_name":"Joe",
+            "middle_initial":"",
+            "last_name":"Peter",
+            "title":"",
+            "email":""
+          }
+        ]
+      }
+    ]
+  }
+]]]></con:request><con:originalUri>http://10.164.21.36/dfds_phl/planHolderListProcess</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="497ec829-a430-4e9b-88cf-813cdbd34b20" name="Trade"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="c121783c-5b4e-4142-956f-b8fb85a1e9f6" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Phl_Trade" searchProperties="true"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Trade" id="d5d8c65d-7ae2-4c92-a271-05826fa4bbe4"><con:settings/><con:config service="https://dev.dfds.construction.com" resourcePath="/planHolderListProcess" methodName="Phl" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Trade" id="13bca2a2-5ffd-4c93-9b84-de1f546dbf24" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-api-key" value=" EVNNF37PHR3MhRhI2JyLd28M2vRwUprD1CHKOgzx " xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://10.164.21.36/dfds_phl</con:endpoint><con:request><![CDATA[[
+  {
+    "efeed_record_id":"MHC_13_08_6_931.01.10191",
+    "project_title":"Drydock Repair",
+    "contract_number":"",
+    "bid_date":"05-April-2016",
+    "page_url":"https:\/\/www.fbo.gov\/?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=core&_cview=0",
+    "bidders_url":"https:\/\/www.fbo.gov\/index?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=ivl&tabmode=list&subtab=list&subtabmode=list&=",
+    "bidder_records":[
+      {
+        "record_id":"",
+        "name":"Technical Concept Solutions",
+        "address1":"143 S Village DR",
+        "address2":"",
+        "address3":"",
+        "city":"Avenel",
+        "state":"NJ",
+        "zip":"07001",
+        "phone":"2017594085",
+        "fax":"",
+        "email":"Jpeter@tech-c-a-s.com",
+        "company":"Technical Concept Solutions",
+        "trade":"Plumbing",
+        "valuation":"",
+        "awardee":"NO",
+        "contacts":[
+          {
+            "full_name":"Joe Peter",
+            "first_name":"Joe",
+            "middle_initial":"",
+            "last_name":"Peter",
+            "title":"",
+            "email":""
+          }
+        ]
+      }
+    ]
+  }
+]]]></con:request><con:originalUri>https://dev.dfds.construction.com/phl</con:originalUri><con:assertion type="JsonPath Existence Match" id="333efce8-4bd1-4343-98fe-49e1d377cd3a" name="Check for existence of [status]"><con:configuration><path>$.status</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="trade" value="${DataSource#trade}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>trade</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="datasourceloop" name="DataSource Loop" id="33c81377-76c8-4c6c-ba71-b707e4e278e1"><con:settings/><con:config><dataSourceStep>DataSource</dataSourceStep><targetStep>Trade</targetStep></con:config></con:testStep><con:testStep type="datasource" name="DataSource" id="5f196694-752d-4e5e-a9bc-04c839d691c2"><con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="Excel"><con:configuration><file>C:/Users/sandhya.munjampally/Documents/GitHub/df_test/PHL_Trade_Data Driven.xlsx</file><worksheet>sheet1</worksheet><cell>A0</cell><ignoreEmpty>true</ignoreEmpty></con:configuration></con:dataSource><con:property>trade</con:property><con:startRow>A1</con:startRow><con:endRow>A17</con:endRow><con:completeLastOperation>false</con:completeLastOperation><con:failOnEmpty>true</con:failOnEmpty><con:trimValues>false</con:trimValues><con:entitizeValues>false</con:entitizeValues><con:restartOnRun>true</con:restartOnRun><con:expandProperties>false</con:expandProperties></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>a9463fc9-3153-4230-a6e6-ab865eaf78d1</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>e3842538-f908-42db-9cf0-e46100a37087</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>a9707a7e-b7ef-48d8-9d6d-a872db0a5bcc</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>d5d8c65d-7ae2-4c92-a271-05826fa4bbe4</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>33c81377-76c8-4c6c-ba71-b707e4e278e1</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>5f196694-752d-4e5e-a9bc-04c839d691c2</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="9b8084a5-08b5-41a9-b917-1d995c513d55" name="PHL-Awardee"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="c07eba28-e132-44fe-852e-e0bed9c23b6b" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="PHL-Awardee" searchProperties="true"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="PHL-Awardee" id="4e469606-3be7-4eb0-b6fa-13f01bad59c2"><con:settings/><con:config service="https://dev.dfds.construction.com" resourcePath="/planHolderListProcess" methodName="Phl" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PHL-Awardee" id="03bfd7f5-c2aa-4eb4-865e-236400bd2f27" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-api-key" value="EVNNF37PHR3MhRhI2JyLd28M2vRwUprD1CHKOgzx" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://10.164.21.36/dfds_phl</con:endpoint><con:request><![CDATA[[
+  {
+    "efeed_record_id":"MHC_13_08_6_931.01.10191",
+    "project_title":"Drydock Repair",
+    "contract_number":"",
+    "bid_date":"05-April-2016",
+    "page_url":"https:\/\/www.fbo.gov\/?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=core&_cview=0",
+    "bidders_url":"https:\/\/www.fbo.gov\/index?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=ivl&tabmode=list&subtab=list&subtabmode=list&=",
+    "bidder_records":[
+      {
+        "record_id":"",
+        "name":"Technical Concept Solutions",
+        "address1":"143 S Village DR",
+        "address2":"",
+        "address3":"",
+        "city":"Avenel",
+        "state":"NJ",
+        "zip":"07001",
+        "phone":"2017594085",
+        "fax":"",
+        "email":"Jpeter@tech-c-a-s.com",
+        "company":"Technical Concept Solutions",
+        "trade":"Plumbing",
+        "valuation":"",
+        "awardee":"NO",
+        "contacts":[
+          {
+            "full_name":"Joe Peter",
+            "first_name":"Joe",
+            "middle_initial":"",
+            "last_name":"Peter",
+            "title":"",
+            "email":""
+          }
+        ]
+      }
+    ]
+  }
+]]]></con:request><con:originalUri>https://dev.dfds.construction.com/phl</con:originalUri><con:assertion type="JsonPath Existence Match" id="5d3ba915-03a6-4b6d-be91-da51aae07865" name="Check for existence of [status]"><con:configuration><path>$.status</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="c4043693-7d5f-4905-83f7-94b4685c360b" name="PHL-PHONENONULL"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="09373031-865e-4451-939c-c06af54d34aa" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="PHL-PHONENONULL" searchProperties="true"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="PHL-PHONENONULL" id="5ef3382a-a3d8-4cbc-ae23-d55465ded77f"><con:settings/><con:config service="http://10.164.21.36" resourcePath="/dfds_phl/planHolderListProcess" methodName="PlanHolderListProcess" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PHL-PHONENONULL" id="1bcd799d-6332-4635-b2e4-cf6e2422cff9" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-api-key" value="" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://10.164.21.36</con:endpoint><con:request><![CDATA[[
+  {
+    "efeed_record_id":"MHC_13_08_6_931.01.10191",
+    "project_title":"Drydock Repair",
+    "contract_number":"",
+    "bid_date":"05-April-2016",
+    "page_url":"https:\/\/www.fbo.gov\/?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=core&_cview=0",
+    "bidders_url":"https:\/\/www.fbo.gov\/index?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=ivl&tabmode=list&subtab=list&subtabmode=list&=",
+    "bidder_records":[
+      {
+        "record_id":"",
+        "name":"Technical Concept Solutions",
+        "address1":"143 S Village DR",
+        "address2":"",
+        "address3":"",
+        "city":"Avenel",
+        "state":"NJ",
+        "zip":"07001",
+        "phone":"",
+        "fax":"",
+        "email":"Jpeter@tech-c-a-s.com",
+        "company":"Technical Concept Solutions",
+        "trade":"Plumbing",
+        "valuation":"",
+        "contacts":[
+          {
+            "full_name":"Joe Peter",
+            "first_name":"Joe",
+            "middle_initial":"",
+            "last_name":"Peter",
+            "title":"",
+            "email":""
+          }
+        ]
+      }
+    ]
+  }
+]]]></con:request><con:originalUri>http://10.164.21.36/dfds_phl/planHolderListProcess</con:originalUri><con:assertion type="JsonPath Existence Match" id="3f7f99c1-170f-438e-84a6-0bebc7ff0ad1" name="Check for existence of [status]"><con:configuration><path>$.status</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="f405f21d-2c26-4617-9dc7-adfb976723ca" name="PHL-Phonenoexceeds10"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="68b16b12-81c0-440b-a311-1d9439047a28" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Phonenoexceeds10digits" searchProperties="true"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Phonenoeceeds10digits" id="f197885f-870b-49a0-8c25-e04951b2e846"><con:settings/><con:config service="http://10.164.21.36" resourcePath="/dfds_phl/planHolderListProcess" methodName="PlanHolderListProcess" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Phonenoeceeds10digits" id="684bd216-7cce-4971-8f2c-7dd21981dd63" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-api-key" value="EVNNF37PHR3MhRhI2JyLd28M2vRwUprD1CHKOgzx" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://10.164.21.36</con:endpoint><con:request><![CDATA[[
+  {
+    "efeed_record_id":"MHC_13_08_6_931.01.10191",
+    "project_title":"Drydock Repair",
+    "contract_number":"",
+    "bid_date":"05-April-2016",
+    "page_url":"https:\/\/www.fbo.gov\/?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=core&_cview=0",
+    "bidders_url":"https:\/\/www.fbo.gov\/index?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=ivl&tabmode=list&subtab=list&subtabmode=list&=",
+    "bidder_records":[
+      {
+        "record_id":"",
+        "name":"Technical Concept Solutions",
+        "address1":"143 S Village DR",
+        "address2":"",
+        "address3":"",
+        "city":"Avenel",
+        "state":"NJ",
+        "zip":"07001",
+        "phone":"22934423223948230",
+        "fax":"",
+        "email":"Jpeter@tech-c-a-s.com",
+        "company":"Technical Concept Solutions",
+        "trade":"Plumbing",
+        "valuation":"",
+        "contacts":[
+          {
+            "full_name":"Joe Peter",
+            "first_name":"Joe",
+            "middle_initial":"",
+            "last_name":"Peter",
+            "title":"",
+            "email":""
+          }
+        ]
+      }
+    ]
+  }
+]]]></con:request><con:originalUri>http://10.164.21.36/dfds_phl/planHolderListProcess</con:originalUri><con:assertion type="JsonPath Existence Match" id="5d7fc4f7-20c0-4611-8cdf-b949c11d4965" name="Check for existence of [rejectedValue]"><con:configuration><path>$.message.rejectedRecordErrors.record-0.errors[0].rejectedValue</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="801566e2-2c20-4981-9ca3-59ca6121ae3f" name="PHL_address2notnull"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="20362e92-ab8f-41ea-946e-ed5ad2aaabc8" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="PHL-address2notnull" searchProperties="true"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="PHL-address2notnull" id="f734a0df-006b-4032-abe6-b76d8a9dcf1d"><con:settings/><con:config service="http://10.164.21.36" resourcePath="/dfds_phl/planHolderListProcess" methodName="PlanHolderListProcess" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PHL-address2notnull" id="02842666-eca3-46cd-9e74-5a07bea0886f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-api-key" value="EVNNF37PHR3MhRhI2JyLd28M2vRwUprD1CHKOgzx" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://10.164.21.36</con:endpoint><con:request><![CDATA[[
+  {
+    "efeed_record_id":"MHC_13_08_6_931.01.10191",
+    "project_title":"Drydock Repair",
+    "contract_number":"",
+    "bid_date":"14-jun-2016",
+    "page_url":"https:\/\/www.fbo.gov\/?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=core&_cview=0",
+    "bidders_url":"https:\/\/www.fbo.gov\/index?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=ivl&tabmode=list&subtab=list&subtabmode=list&=",
+    "bidder_records":[
+      {
+        "record_id":"",
+        "name":"Technical Concept Solutions",
+        "address1":"",
+        "address2":"143 S Village Dr",
+        "address3":"",
+        "city":"Avenel",
+        "state":"NJ",
+        "zip":"07001",
+        "phone":"2293442",
+        "fax":"",
+        "email":"Jpeter@tech-c-a-s.com",
+        "company":"Technical Concept Solutions",
+        "trade":"Plumbing",
+        "valuation":"",
+        "contacts":[
+          {
+            "full_name":"Joe Peter",
+            "first_name":"Joe",
+            "middle_initial":"",
+            "last_name":"Peter",
+            "title":"",
+            "email":""
+          }
+        ]
+      }
+    ]
+  }
+]]]></con:request><con:originalUri>http://10.164.21.36/dfds_phl/planHolderListProcess</con:originalUri><con:assertion type="JsonPath Existence Match" id="2d3be926-cfaf-4ccf-be31-a08aa6c85c92" name="Check for existence of [message]"><con:configuration><path>$.message.rejectedRecordErrors.record-0.errors[0].message</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="15169f61-1291-46c9-b31b-f374c1341d0c" name="Check for existence of [message]"><con:configuration><path>$.message.rejectedRecordErrors.record-0.errors[0].message</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="ee5fc7d6-86a4-4f78-a2d5-c8d7cc440265" name="PHL-Address3Notnull"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="0588f229-d5c8-42e0-a83e-85f1fcdaac4f" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="PHL-Address3notnull" searchProperties="true"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="PHL-Address3notnull" id="7e615b1a-191a-4774-885d-d0d9ab565b55"><con:settings/><con:config service="http://10.164.21.36" resourcePath="/dfds_phl/planHolderListProcess" methodName="PlanHolderListProcess" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PHL-Address3notnull" id="46332ee8-ad5a-4392-85a5-c54c849fc85e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-api-key" value="EVNNF37PHR3MhRhI2JyLd28M2vRwUprD1CHKOgzx" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://10.164.21.36</con:endpoint><con:request><![CDATA[[
+  {
+    "efeed_record_id":"MHC_13_08_6_931.01.10191",
+    "project_title":"Drydock Repair",
+    "contract_number":"",
+    "bid_date":"14-jun-2016",
+    "page_url":"https:\/\/www.fbo.gov\/?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=core&_cview=0",
+    "bidders_url":"https:\/\/www.fbo.gov\/index?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=ivl&tabmode=list&subtab=list&subtabmode=list&=",
+    "bidder_records":[
+      {
+        "record_id":"",
+        "name":"Technical Concept Solutions",
+        "address1":"",
+        "address2":"143 S Village Dr",
+        "address3":"143 S Village Dr",
+        "city":"Avenel",
+        "state":"NJ",
+        "zip":"07001",
+        "phone":"2293442",
+        "fax":"",
+        "email":"Jpeter@tech-c-a-s.com",
+        "company":"Technical Concept Solutions",
+        "trade":"Plumbing",
+        "valuation":"",
+        "contacts":[
+          {
+            "full_name":"Joe Peter",
+            "first_name":"Joe",
+            "middle_initial":"",
+            "last_name":"Peter",
+            "title":"",
+            "email":""
+          }
+        ]
+      }
+    ]
+  }
+]]]></con:request><con:originalUri>http://10.164.21.36/dfds_phl/planHolderListProcess</con:originalUri><con:assertion type="JsonPath Existence Match" id="a7fe3b2a-1c93-4b90-8164-ea1053381177" name="Check for existence of [message]"><con:configuration><path>$.message.rejectedRecordErrors.record-0.errors[1].message</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="7f637e8c-5394-4805-a0a5-888ce9bb59a0" name="Check for existence of [rejectedRecordCount]"><con:configuration><path>$.message.rejectedRecordCount</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="9b129409-a799-4ecc-b55c-b83e3716bcac" name="PHL-SOURCE-BIDX"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="3d71305d-d071-4933-9dcb-3218cf64396f" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="PHL-SOURCE-01" searchProperties="true"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Phl-Source-bidx" id="4a4d376b-4a10-467e-9a00-5d889af4b2bb"><con:settings/><con:config service="http://10.164.21.36" resourcePath="/dfds_phl/planHolderListProcess" methodName="PlanHolderListProcess" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Phl-Source-bidx" id="42b0ea8e-abe1-4e16-b7e9-234ee73096e3" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-api-key" value="EVNNF37PHR3MhRhI2JyLd28M2vRwUprD1CHKOgzx" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://10.164.21.36</con:endpoint><con:request><![CDATA[[
+  {
+    "efeed_record_id":"MHC_15_08_28_27043.1.1347",
+    "source":"BIDX",
+    "project_title":"Drydock Repair",
+    "contract_number":"",
+    "bid_date":"25-April-2016",
+    "page_url":"https:\/\/www.fbo.gov\/?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=core&_cview=0",
+    "bidders_url":"https:\/\/www.fbo.gov\/index?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=ivl&tabmode=list&subtab=list&subtabmode=list&=",
+    "bidder_records":[
+      {
+        "record_id":"",
+        "name":"Technical Concept Solutions",
+        "address1":"127 Warwick rd",
+        "address2":"",
+        "address3":"",
+        "city":"West Windsor",
+        "state":"NJ",
+        "zip":"08550",
+        "phone":"2017554085",
+        "fax":"",
+        "email":"Jpeter@tech-c-a-s.com",
+        "company":"Technical Concept Solutions",
+      
+        "valuation":"",
+        "awardee":"NO",
+        "contacts":[
+          {
+            "full_name":"Madhu Latha",
+            "first_name":"Madhu",
+            "middle_initial":"",
+            "last_name":"Konda",
+            "title":"",
+            "email":""
+          }
+        ]
+      }
+    ]
+  }
+]]]></con:request><con:originalUri>http://10.164.21.36/dfds_phl/planHolderListProcess</con:originalUri><con:assertion type="JsonPath Match" id="0c38032f-da06-49b1-8c11-2c5bce93d964" name="Match content of [ingestedRecordCount]"><con:configuration><path>$.message.ingestedRecordCount</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="26215b7c-e718-4904-aba1-c84dd78da12b" name="Match content of [recordCount]"><con:configuration><path>$.message.recordCount</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="5b1d611a-bf9e-49f8-b7bb-0973fa9193ec" name="PHL-SOURCE-NULL"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="ad2eaac3-98f1-4573-8cad-5013337e7489" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="PHL-SOURCE-02" searchProperties="true"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Phl-Source-Null" id="4e688c51-1395-4cfa-ab8b-0673e63ec9df"><con:settings/><con:config service="http://10.164.21.36" resourcePath="/dfds_phl/planHolderListProcess" methodName="PlanHolderListProcess" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Phl-Source-Null" id="afab0015-ae44-4e14-98ed-0f36c26ac1f2" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-api-key" value="EVNNF37PHR3MhRhI2JyLd28M2vRwUprD1CHKOgzx" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://10.164.21.36</con:endpoint><con:request><![CDATA[[
+  {
+    "efeed_record_id":"MHC_15_08_28_27043.1.1347",
+    "source":"",
+    "project_title":"Drydock Repair",
+    "contract_number":"",
+    "bid_date":"25-April-2016",
+    "page_url":"https:\/\/www.fbo.gov\/?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=core&_cview=0",
+    "bidders_url":"https:\/\/www.fbo.gov\/index?s=opportunity&mode=form&id=bc46d26656259d3d958b58b085aea4b6&tab=ivl&tabmode=list&subtab=list&subtabmode=list&=",
+    "bidder_records":[
+      {
+        "record_id":"",
+        "name":"Technical Concept Solutions",
+        "address1":"127 Warwick rd",
+        "address2":"",
+        "address3":"",
+        "city":"West Windsor",
+        "state":"NJ",
+        "zip":"08550",
+        "phone":"2017554085",
+        "fax":"",
+        "email":"Jpeter@tech-c-a-s.com",
+        "company":"Technical Concept Solutions",
+      
+        "valuation":"",
+        "awardee":"NO",
+        "contacts":[
+          {
+            "full_name":"Madhu Latha",
+            "first_name":"Madhu",
+            "middle_initial":"",
+            "last_name":"Konda",
+            "title":"",
+            "email":""
+          }
+        ]
+      }
+    ]
+  }
+]]]></con:request><con:originalUri>http://10.164.21.36/dfds_phl/planHolderListProcess</con:originalUri><con:assertion type="JsonPath Existence Match" id="92e0a47e-9911-4ed5-9f99-3811e327d2ba" name="Check for existence of [recordCount]"><con:configuration><path>$.message.recordCount</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="24df170d-5e2d-4894-8576-cfb682e91ee7" name="Check for existence of [ingestedRecordCount]"><con:configuration><path>$.message.ingestedRecordCount</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:savedRecentRuns>1</con:savedRecentRuns><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:reporting><con:reportTemplates/><con:xmlTemplates/><con:xmlTemplates/><con:parameters/><con:parameters/></con:reporting><con:reporting/><con:authRepository/><con:tags/></con:soapui-project>
